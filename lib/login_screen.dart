@@ -110,6 +110,9 @@ class _LoginScreenState extends State<LoginScreen> {
                       onPressed: () async{
                         await _auth();
                       },
+                      onLongPress: () async{
+                        await _authOnlyBiometrics();
+                      },
                       color: Colors.white,
                       child: const Text("Entrar", style: TextStyle(color: Colors.black)),
                     ),
